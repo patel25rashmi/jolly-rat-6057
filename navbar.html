@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #navbar{
+            display: flex;
+            justify-content: space-between;
+            font-size: 15px;
+            margin-top: 40px;
+            font-family: 'geomanist-regular',sans-serif;
+        }
+        #navLeft{
+            display: flex;
+            width: 40%;
+            justify-content: space-around;
+        }
+        #navRight{
+            display: flex;
+            width: 20%;
+            /* justify-content: space-around; */
+        }
+        #signUp{
+            padding: 10px 15px;
+            color: white;
+            background-color: #57bb71;
+            border-radius: 3px;
+            border: none;
+            font-size: 15px;
+            margin-left: 20px;
+        }
+        #new{
+            border: none;
+            border-radius: 3px;
+            color: white;
+            background-color: #57bb71;
+            font-size: 12px;
+            padding: 4px 7px;
+            margin-left: 4px;
+        }
+        #navRight div{
+            margin: auto 0px;
+        }
+        #navLeft div{
+            margin: auto 0px;
+        }
+    </style>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+</head>
+<body>
+    <div id="navbar">
+        <div id="navLeft">
+            <div><i class='fa fa-clock-o'></i> EverHour</div>
+            <div>Integrations <span id="new">New</span></div>
+            <div>Pricing</div>
+            <div>Demo</div>
+        </div>
+        <div id="navRight">
+            <div>Login</div>
+            <div><button id="signUp">Sign Up</button></div>
+        </div>
+    </div>
+</body>
+</html>

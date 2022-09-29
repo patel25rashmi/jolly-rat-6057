@@ -9,7 +9,7 @@
         #navbar{
             display: flex;
             justify-content: space-between;
-            font-size: 15px;
+            font-size: 17px;
             margin-top: 40px;
             font-family: 'geomanist-regular',sans-serif;
         }
@@ -20,7 +20,7 @@
         }
         #navRight{
             display: flex;
-            width: 20%;
+            width: 15%;
             /* justify-content: space-around; */
         }
         #signUp{
@@ -44,19 +44,36 @@
         #navRight div{
             margin: auto 0px;
         }
-        #navLeft div{
+        .alignVerticallyC{
             margin: auto 0px;
         }
+        #everhourImg{
+            height: 30px;
+            width: 30px;
+            margin-right: 10px;
+        }
+        #navLeftFirst{
+            display: flex;
+            margin: auto 0px;
+            font-size: 18px;
+        }
+        /* #navLeftFirst>div{
+            margin
+        } */
     </style>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 </head>
 <body>
     <div id="navbar">
         <div id="navLeft">
-            <div><i class='fa fa-clock-o'></i> EverHour</div>
-            <div>Integrations <span id="new">New</span></div>
-            <div>Pricing</div>
-            <div>Demo</div>
+            <!-- <div><i class='fa fa-clock-o'></i> EverHour</div> -->
+            <div id="navLeftFirst"><img id="everhourImg"
+                    src="https://upload.wikimedia.org/wikipedia/en/3/3a/Everhour_%28software%29_logo.png" alt="">
+                <div class="alignVerticallyC">Everhour</div>
+            </div>
+            <div class="alignVerticallyC">Integrations <span id="new">New</span></div>
+            <div class="alignVerticallyC">Pricing</div>
+            <div class="alignVerticallyC">Demo</div>
         </div>
         <div id="navRight">
             <div>Login</div>

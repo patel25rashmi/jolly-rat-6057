@@ -10,25 +10,25 @@
             font-family: 'geomanist-book',sans-serif;
             color: #333333;
         }
-        #middle1{
+        .middle1{
             /* width: 50%; */
             text-align: center;
             margin: auto;
         }
-        #middle1>h1{
+        .middle1>h1{
             width: 70%;
             margin: 45px auto;
             font-size: 45px;
             font-weight: 180;
         }
-        #middle1>h3{
+        .middle1>h3{
             width: 60%;
             text-align: center;
             margin: 45px auto;
             color: #7f7876;
             font-weight: 70;
         }
-        #middle1 div{
+        .middle1 div{
             width: 50%;
             text-align: center;
             margin: 45px auto;
@@ -73,6 +73,9 @@
             padding: 60px 80px;
         }
 
+        #middle3{
+            margin-bottom: 100px;
+        }
         #middle3>h1{
             width: 50%;
             text-align: center;
@@ -89,10 +92,175 @@
             height: 27px;
             width: 27px;
         }
+        .slidemain{
+            display: flex;
+            width: 100%;
+            height: 600px;
+            /* border: 1px solid teal; */
+        }
+        .slideContainer{
+        width: 70%;
+        height:600px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin: 50px auto;
+        position: relative;
+        overflow: hidden;
+        padding: 0px;
+    }
+    .slide{
+        width: 100%;
+        height: 100%;
+        transition: 1s;
+        position: absolute;
+    }
+    .navbtn{
+        margin: auto;
+        width: 15%;
+        text-align: center;
+    }
+    .navbtn>button>img{
+        width: 30px;
+        height: 30px;
+    }
+    .navbtn>button{
+        background-color: white;
+        border: none;
+        border-radius: 50%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 10px;
+    }
+    #sliderBelow{
+        display: flex;
+        /* border: 1px solid red; */
+        width: 80%;
+        height: 250px;
+        margin: 100px auto;
+    }
+    .cards{
+        display: flex;
+        /* justify-content: space-around; */
+        width: 30%;
+        margin: auto;
+        height: 240px;
+        /* border: 1px solid mediumaquamarine; */
+    }
+    .baloon{
+        height: 60px;
+        width: 60px;
+        background-color: #f2fbf9;
+        border-radius: 50% 50% 0 50%;
+        color:#57bb71;
+        text-align: center;
+        line-height: 60px;
+        font-size: 30px;
+        font-family: 'geomanist-regular',sans-serif;
+    }
+    .baloonNextDiv{
+        width: 70%;
+        margin-left: 20px;
+        text-align: left;
+        line-height: 1.6;
+    }
+    .baloonNextDiv>h5{
+        margin-top: 0;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    .baloonNextDiv>p{
+        margin-top: -20px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        color: #7c7c7c;
+    }
+    #middle4{
+        display: flex;
+        height: 600px;
+        width: 90%;
+        margin: auto;
+        border: 1px solid red;
+    }
+    #middle4Div1{
+        width: 50%;
+        /* border: 1px solid black; */
+        /* display: flex; */
+    }
+    #containCardPara{
+        display: flex;
+    }
+    #middle4Div2>img{
+        width: 100%;
+        height: 100%;
+    }
+    #middle4Div2{
+        width: 40%;
+        /* border: 1px solid black; */
+        margin: auto;
+    }
+    #commaDiv{
+        width: 20%;
+        display: flex;
+        height: 70px;
+        /* border: 1px solid teal; */
+    }
+    #commaDiv>div>img{
+        height: 60px;
+        width: 60px;
+    }
+    #paraDiv{
+        line-height: 1.44;
+        font-size: 1.125rem;
+        text-align: left;
+        margin-left: 10px;
+    }
+    #paraDiv>a{
+        color: #53a7ea;
+    }
+    #paraDiv>a:hover{
+        text-decoration: none;
+    }
+    #middle5{
+        display: flex;
+        border: 1px solid teal;
+        width: 90%;
+        margin: auto;
+        height: 300px;
+        margin-top: 30px;
+    }
+    #middle5>div{
+        width: 50%;
+        margin: auto;
+        border: 1px solid blueviolet;
+    }
+    #middle5>div>h1{
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 1.22;
+        margin-bottom: -30px;
+        width: 100%;
+    }
+    #middle5>div>h3{
+        width: 100%;
+    }
+    #middle5 div{
+        margin-bottom: -20px;
+        width: 100%;
+        text-align: center;
+    }
+    .bulletPoint{
+        display: flex;
+        line-height: 10px;
+    }
+    .colorDot>img{
+        height: 20px;
+        width: 20px;
+    }
+    
     </style>
 </head>
 <body>
-    <div id="middle1">
+    <div class="middle1">
         <h1>Powerful time tracking software with hassle-free integrations</h1>
         <h3>Accurate time tracker for budgeting, client invoicing and painless payroll.
             Works with the apps your team already use</h3>
@@ -119,14 +287,147 @@
         <div> <span><img class="appflexImg" src="data:image/png;base64,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" alt=""></span> Notion</div>
     </div>
     <!-- Slideshow container -->
-    <div>
-        
+    <div class="slidemain">
+        <div class="navbtn"><button onclick="goPrev()"><img
+                    src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzJ2LTE3MmgxNzJ2MTcyeiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnIGZpbGw9IiM2NjY2NjYiPjxwYXRoIGQ9Ik05Ny40NjY2NywxNy4yaDExLjQ2NjY3YzIuMjEzMDcsMCA0LjIzMTIsMS4yNzg1MyA1LjE4MjkzLDMuMjc5NDdjMC45NTE3MywyLjAwMDkzIDAuNjU5MzMsNC4zNjg4IC0wLjc0NTMzLDYuMDg4OGwtNDguNjMwMTMsNTkuNDMxNzNsNDguNjMwMTMsNTkuNDM3NDdjMS40MDQ2NywxLjcxNDI3IDEuNjkxMzMsNC4wODIxMyAwLjc0NTMzLDYuMDg4OGMtMC45NDYsMi4wMDY2NyAtMi45Njk4NywzLjI3MzczIC01LjE4MjkzLDMuMjczNzNoLTExLjQ2NjY3Yy0xLjcyLDAgLTMuMzQ4MjcsLTAuNzc0IC00LjQzNzYsLTIuMTA0MTNsLTUxLjYsLTYzLjA2NjY3Yy0xLjcyNTczLC0yLjExNTYgLTEuNzI1NzMsLTUuMTQ4NTMgMCwtNy4yNjQxM2w1MS42LC02My4wNjY2N2MxLjA4OTMzLC0xLjMyNDQgMi43MTc2LC0yLjA5ODQgNC40Mzc2LC0yLjA5ODR6Ij48L3BhdGg+PC9nPjwvZz48L3N2Zz4="
+                    alt=""></button></div>
+        <div class="slideContainer">
+            <img class="slide"
+                src="https://blog-cdn.everhour.com/assets/images/new-design/screens/integrations/asana-primary@2x.webp"
+                alt="">
+            <img class="slide"
+                src="https://blog-cdn.everhour.com/assets/images/new-design/screens/integrations/trello-primary@2x.webp"
+                alt="">
+            <img class="slide"
+                src="https://blog-cdn.everhour.com/assets/images/new-design/screens/integrations/basecamp-primary@2x.webp"
+                alt="">
+            <img class="slide"
+                src="https://blog-cdn.everhour.com/assets/images/new-design/screens/integrations/jira-primary@2x.webp"
+                alt="">
+            <img class="slide"
+                src="https://blog-cdn.everhour.com/assets/images/new-design/screens/integrations/github-primary@2x.webp"
+                alt="">
+            <img class="slide"
+                src="https://blog-cdn.everhour.com/assets/images/new-design/screens/integrations/clickup-primary@2x.webp"
+                alt="">
+            <img class="slide"
+                src="https://blog-cdn.everhour.com/assets/images/new-design/screens/integrations/monday-primary@2x.webp"
+                alt="">
+            <img class="slide"
+                src="https://blog-cdn.everhour.com/assets/images/new-design/screens/integrations/notion-primary@2x.webp"
+                alt="">
+        </div>
+        <div class="navbtn"><button onclick="goNext()"><img
+                    src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzJ2LTE3MmgxNzJ2MTcyeiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnIGZpbGw9IiM2NjY2NjYiPjxwYXRoIGQ9Ik02OC44LDE1NC44aC0xMS40NjY2N2MtMi4yMTMwNywwIC00LjIzMTIsLTEuMjc4NTMgLTUuMTgyOTMsLTMuMjc5NDdjLTAuOTUxNzMsLTIuMDAwOTMgLTAuNjU5MzMsLTQuMzY4OCAwLjc0NTMzLC02LjA4ODhsNDguNjMwMTMsLTU5LjQzMTczbC00OC42MzAxMywtNTkuNDM3NDdjLTEuNDA0NjcsLTEuNzE0MjcgLTEuNjkxMzMsLTQuMDgyMTMgLTAuNzQ1MzMsLTYuMDg4OGMwLjk0NiwtMi4wMDY2NyAyLjk2OTg3LC0zLjI3MzczIDUuMTgyOTMsLTMuMjczNzNoMTEuNDY2NjdjMS43MiwwIDMuMzQ4MjcsMC43NzQgNC40Mzc2LDIuMTA0MTNsNTEuNiw2My4wNjY2N2MxLjcyNTczLDIuMTE1NiAxLjcyNTczLDUuMTQ4NTMgMCw3LjI2NDEzbC01MS42LDYzLjA2NjY3Yy0xLjA4OTMzLDEuMzI0NCAtMi43MTc2LDIuMDk4NCAtNC40Mzc2LDIuMDk4NHoiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg=="
+                    alt=""></button></div>
+    </div>
+    <!-- 3 divs below slider -->
+    <div id="sliderBelow">
+        <div class="cards">
+            <div class="baloon">1</div>
+            <div class="baloonNextDiv">
+                <h5>Quick setup</h5>
+                <p>Connect Everhour with your tool and start tracking time right away. No manual project setup required.</p>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="baloon">2</div>
+            <div class="baloonNextDiv">
+                <h5>Native integration</h5>
+                <p>Time tracking controls natively appears inside your project management tool, making it easy to track
+                    time.</p>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="baloon">3</div>
+            <div class="baloonNextDiv">
+                <h5>Automatic updates</h5>
+                <p>Everhour syncs changes automatically. That means your reports will always show the freshest data.</p>
+            </div>
+        </div>
     </div>
 </div>
-    <div id="middle4"></div>
-    <div id="middle5"></div>
+    <div id="middle4">
+        <div id="middle4Div1">
+            <h1>Everhour has helped 240,000+ people complete over 135 million tasks in 3 million projects</h1>
+            <div id="containCardPara">
+                <div id="commaDiv">
+                    <div><img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzJ2LTE3MmgxNzJ2MTcyeiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnIGZpbGw9IiNkN2YzZTMiPjxwYXRoIGQ9Ik04NiwxNy4yYy0yOC40OTc4OSwwIC01MS42LDIzLjEwMjExIC01MS42LDUxLjZjMCwyOC40OTc4OSAyMy4xMDIxMSw1MS42IDUxLjYsNTEuNmMyLjAyOTcsLTAuMDIyMzQgNC4wNTYzMSwtMC4xNjQ0MyA2LjA2OTI3LC0wLjQyNTUyYy0zLjU1MjU1LDE1Ljc2NzM4IC0xMC43MjgyNywyNS43NDgwMiAtMTAuNzUsMjUuNzc3NjFjLTEuNjMxNjcsMi4zMDQ0NCAtMS4zNDM0LDUuNDUzNjMgMC42Nzk1Miw3LjQyMzU0YzIuMDIyOTIsMS45Njk5MSA1LjE3ODY2LDIuMTc0NDYgNy40Mzg5NywwLjQ4MjE5YzAsMCA0NC4zODkzMSwtMzIuNTUwNzYgNDcuODI2MywtNzkuMjE0MDZjMC4yMTUwNCwtMS44NzM3IDAuMzI3MTgsLTMuNzU3NzcgMC4zMzU5NCwtNS42NDM3NWMwLjAwMjAzLC0wLjE5MDYyIC0wLjAwNTQ0LC0wLjM4MTIyIC0wLjAyMjM5LC0wLjU3MTA5Yy0wLjMxMjg1LC0yOC4yNjU4OSAtMjMuMzA5OTgsLTUxLjAxODM3IC01MS41Nzc2MSwtNTEuMDI4OTF6Ij48L3BhdGg+PC9nPjwvZz48L3N2Zz4=" alt=""></div>
+                    <div><img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzJ2LTE3MmgxNzJ2MTcyeiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnIGZpbGw9IiNkN2YzZTMiPjxwYXRoIGQ9Ik04NiwxNy4yYy0yOC40OTc4OSwwIC01MS42LDIzLjEwMjExIC01MS42LDUxLjZjMCwyOC40OTc4OSAyMy4xMDIxMSw1MS42IDUxLjYsNTEuNmMyLjAyOTcsLTAuMDIyMzQgNC4wNTYzMSwtMC4xNjQ0MyA2LjA2OTI3LC0wLjQyNTUyYy0zLjU1MjU1LDE1Ljc2NzM4IC0xMC43MjgyNywyNS43NDgwMiAtMTAuNzUsMjUuNzc3NjFjLTEuNjMxNjcsMi4zMDQ0NCAtMS4zNDM0LDUuNDUzNjMgMC42Nzk1Miw3LjQyMzU0YzIuMDIyOTIsMS45Njk5MSA1LjE3ODY2LDIuMTc0NDYgNy40Mzg5NywwLjQ4MjE5YzAsMCA0NC4zODkzMSwtMzIuNTUwNzYgNDcuODI2MywtNzkuMjE0MDZjMC4yMTUwNCwtMS44NzM3IDAuMzI3MTgsLTMuNzU3NzcgMC4zMzU5NCwtNS42NDM3NWMwLjAwMjAzLC0wLjE5MDYyIC0wLjAwNTQ0LC0wLjM4MTIyIC0wLjAyMjM5LC0wLjU3MTA5Yy0wLjMxMjg1LC0yOC4yNjU4OSAtMjMuMzA5OTgsLTUxLjAxODM3IC01MS41Nzc2MSwtNTEuMDI4OTF6Ij48L3BhdGg+PC9nPjwvZz48L3N2Zz4=" alt=""></div>
+                </div>
+                <div id="paraDiv">
+                    <p>Everhour helps us track our engineering hours which is a requirement for several Government grants we have received. Without Everhour, we would be unable to accurately track the hours associated with each individual project we are working on as a company. The reports are easily customizable which allows me to extract the data I need. Everhour is a great tool for our time tracking needs!</p>
+                    <h4>Kelly Bonneau, CPA</h4>
+                    <p>Accounting Manager at <b> 7shifts</b></p>
+                    <a href="#">Read more reviews</a>
+                </div>
+            </div>
+        </div>
+        <div id="middle4Div2"><img src="https://blog-cdn.everhour.com/assets/images/new-design/illustrations/customers/customer-kelly@2x.webp" alt=""></div>
+    </div>
+    <div id="middle5">
+        <div class="middle1">
+            <h1>Powerful time tracking software with hassle-free integrations</h1>
+            <h3>Accurate time tracker for budgeting, client invoicing and painless payroll.
+                Works with the apps your team already use</h3>
+            <div>
+                <input type="text" placeholder="Work Email...">
+                <button class="btnTryFree">Try free</button>
+            </div>
+            <div>
+               <img class="googleimg" src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-1024.png" alt="">
+                <a href="#" class="anchortextdeco"> Or sign up with Google Account</a>
+            </div>
+        </div>
+        <div>
+            <div class="bulletPoint">
+                <div class="colorDot"><img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzJ2LTE3MmgxNzJ2MTcyeiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnIGZpbGw9IiM1N2JiNzEiPjxwYXRoIGQ9Ik04NiwxNy4yYy0zNy45OTcxOSwwIC02OC44LDMwLjgwMjgxIC02OC44LDY4LjhjMCwzNy45OTcxOSAzMC44MDI4MSw2OC44IDY4LjgsNjguOGMzNy45OTcxOSwwIDY4LjgsLTMwLjgwMjgxIDY4LjgsLTY4LjhjMCwtMzcuOTk3MTkgLTMwLjgwMjgxLC02OC44IC02OC44LC02OC44eiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+" alt=""></div>
+                <div><b>Track time from the apps you already use</b></div>
+            </div>
+            <div class="bulletPoint">
+                <div class="colorDot"><img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzJ2LTE3MmgxNzJ2MTcyeiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnIGZpbGw9IiM1N2JiNzEiPjxwYXRoIGQ9Ik04NiwxNy4yYy0zNy45OTcxOSwwIC02OC44LDMwLjgwMjgxIC02OC44LDY4LjhjMCwzNy45OTcxOSAzMC44MDI4MSw2OC44IDY4LjgsNjguOGMzNy45OTcxOSwwIDY4LjgsLTMwLjgwMjgxIDY4LjgsLTY4LjhjMCwtMzcuOTk3MTkgLTMwLjgwMjgxLC02OC44IC02OC44LC02OC44eiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+" alt=""></div>
+                <div><b>Know where your team’s time is going</b></div>
+            </div>
+            <div class="bulletPoint">
+                <div class="colorDot"><img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzJ2LTE3MmgxNzJ2MTcyeiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnIGZpbGw9IiM1N2JiNzEiPjxwYXRoIGQ9Ik04NiwxNy4yYy0zNy45OTcxOSwwIC02OC44LDMwLjgwMjgxIC02OC44LDY4LjhjMCwzNy45OTcxOSAzMC44MDI4MSw2OC44IDY4LjgsNjguOGMzNy45OTcxOSwwIDY4LjgsLTMwLjgwMjgxIDY4LjgsLTY4LjhjMCwtMzcuOTk3MTkgLTMwLjgwMjgxLC02OC44IC02OC44LC02OC44eiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+" alt=""></div>
+                <div><b>Keep projects on budget</b></div>
+            </div>
+            <div class="bulletPoint">
+                <div class="colorDot"><img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzJ2LTE3MmgxNzJ2MTcyeiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnIGZpbGw9IiM1N2JiNzEiPjxwYXRoIGQ9Ik04NiwxNy4yYy0zNy45OTcxOSwwIC02OC44LDMwLjgwMjgxIC02OC44LDY4LjhjMCwzNy45OTcxOSAzMC44MDI4MSw2OC44IDY4LjgsNjguOGMzNy45OTcxOSwwIDY4LjgsLTMwLjgwMjgxIDY4LjgsLTY4LjhjMCwtMzcuOTk3MTkgLTMwLjgwMjgxLC02OC44IC02OC44LC02OC44eiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+" alt=""></div>
+                <div><b>Increase transparency</b></div>
+            </div>
+            <div class="bulletPoint">
+                <div class="colorDot"><img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzJ2LTE3MmgxNzJ2MTcyeiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnIGZpbGw9IiM1N2JiNzEiPjxwYXRoIGQ9Ik04NiwxNy4yYy0zNy45OTcxOSwwIC02OC44LDMwLjgwMjgxIC02OC44LDY4LjhjMCwzNy45OTcxOSAzMC44MDI4MSw2OC44IDY4LjgsNjguOGMzNy45OTcxOSwwIDY4LjgsLTMwLjgwMjgxIDY4LjgsLTY4LjhjMCwtMzcuOTk3MTkgLTMwLjgwMjgxLC02OC44IC02OC44LC02OC44eiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+" alt=""></div>
+                <div><b>Make your workflow more efficient</b></div>
+            </div>
+        </div>     
+    </div>
 </body>
 </html>
-<style>
+<script>
+    const slides = document.querySelectorAll(".slide");
+    var counter = 0;
+    slides.forEach((slide, index) => {
+        slide.style.left = `${index * 100}%`
+    })
 
-</style>
+    const goPrev = () => {
+        counter--;
+        slideImage()
+    }
+
+    const goNext = () => {
+        counter++;
+        slideImage()
+    }
+
+    const slideImage = () => {
+        slides.forEach(
+            (slide) => {
+                slide.style.transform = `translateX(-${counter * 100}%)`
+            }
+        )
+    }
+
+
+</script>

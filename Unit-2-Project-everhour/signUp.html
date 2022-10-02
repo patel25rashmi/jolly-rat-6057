@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Navbar start here */
+       #navbar{
+            display: flex;
+            justify-content: space-between;
+            font-size: 17px;
+            margin-top: 25px;
+            font-family: 'geomanist-regular',sans-serif;
+            /* position: -webkit-sticky; */
+            position: sticky;
+            top: 0;
+            background-color: white;
+            padding: 10px 0px;
+            border-bottom: 0.5px solid #e9e9e9;
+        }
+        #navLeft{
+            display: flex;
+            width: 40%;
+            justify-content: space-around;
+        }
+        #navRight{
+            display: flex;
+            width: 15%;
+            /* justify-content: space-around; */
+        }
+        #signUp{
+            padding: 10px 15px;
+            color: white;
+            background-color: #57bb71;
+            border-radius: 3px;
+            border: none;
+            font-size: 15px;
+            margin-left: 20px;
+        }
+        #signUp>a{
+            text-decoration: none;
+            font-size: 15px;
+            color: white;
+        }
+        #new{
+            border: none;
+            border-radius: 3px;
+            color: white;
+            background-color: #57bb71;
+            font-size: 12px;
+            padding: 4px 7px;
+            margin-left: 4px;
+        }
+        #navRight div{
+            margin: auto 0px;
+        }
+        #navRight>div>a{
+            text-decoration: none;
+        }
+        .alignVerticallyC{
+            margin: auto 0px;
+        }
+        .alignVerticallyC>a{
+            text-decoration: none;
+        }
+        #everhourImg{
+            height: 30px;
+            width: 30px;
+            margin-right: 10px;
+        }
+        #navLeftFirst{
+            display: flex;
+            margin: auto 0px;
+            font-size: 18px;
+        }
+        /* Nav ends here */
+
+        .middle1{
+            /* width: 50%; */
+            text-align: center;
+            margin: auto;
+            margin-top: 100px;
+            margin-bottom: -40px;
+        }
+        .middle1>h1{
+            width: 70%;
+            margin: 45px auto 15px;
+            font-size: 45px;
+            font-weight: 180;
+        }
+        .middle1>h3{
+            width: 60%;
+            text-align: center;
+            margin: 25px auto;
+            color: #7f7876;
+            font-weight: 70;
+        }
+        form>input{
+            margin-left: 10%;
+            width: 300px;
+            height: 38px;
+            margin-bottom: 40px;
+        }
+        .middle1 div{
+            width: 30%;
+            text-align: center;
+            margin: 15px auto;
+            /* display: flex; */
+            /* border: 1px solid red; */
+        }
+        
+        .btnTryFree{
+            height: 50px;
+            width: 170px;
+            background-color: #57bb71;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            margin-left: 10px;
+            font-size: 15px;
+
+        }
+        .anchortextdeco{
+            text-decoration: none;
+            color: #7f7876;
+            /* border: 1px solid teal; */
+            padding-left: 10px;
+        }
+        .anchortextdeco:hover{
+            text-decoration: underline;
+        }
+        
+        .googleimg{
+            width: 30px;
+            height: 30px;
+            /* border: 1px solid red; */
+            padding-left: 20%;
+        }
+        .Googlebtn{
+            height: 44px;
+            width: 310px;
+            padding: 5px;
+            background-color: white;
+            border: 1px solid #767676;
+            border-radius: 3px;
+            color: #767676;
+            font-size: 15px;
+            margin: 15px auto 0 30px;
+            text-align: center;
+            padding-right: 15px;
+            /* margin-left: 30px; */
+        }
+        .changeColor{
+            color: #767676;
+            margin: 30px 0 20px 0;
+        }
+        .changeColor2last{
+            color: #767676;
+            margin: -10px 0 50px 0;
+        }
+        .changeColor>a{
+            font-size: 18px;
+        }
+        p{
+            margin-top: -20px;
+        }
+        .givePadding{
+            padding: 0 5px;
+        }
+        #ReadMorebtn{
+            border: 1px solid #57bb71;
+            color: #57bb71;
+            background-color: white;
+            border-radius: 3px;
+            height: 45px;
+            width: 140px;
+            /* margin: auto; */
+            margin-left: 45%;
+        }
+        #ReadMorebtn:hover{
+            border: node;
+            background-color: #57bb71;
+            color: white;
+        }
+        #commentContainer {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(6,1fr);
+            gap: 40px;
+            height: 950px;
+            background-color: #f5fbf7;
+            width: 90%;
+            margin: auto;
+            margin-bottom: 40px;
+            padding-top: 10px;
+            grid-template-areas: 
+            "a d f"
+            "a d f"
+            "b d g"
+            "b e g"
+            "c e h"
+            "c e h";
+        }
+
+        #commentContainer>div {
+            /* background-color: teal; */
+            border-radius: 5px;
+            border: 0.5px solid #91d3a3;
+        }
+
+        #commentContainer > div:nth-child(1) {
+        grid-area: a;
+      }
+
+      #commentContainer > div:nth-child(2) {
+        grid-area: b;
+      }
+
+      #commentContainer > div:nth-child(3) {
+        grid-area: c;
+      }
+
+      #commentContainer > div:nth-child(4) {
+        grid-area: d;
+      }
+      #commentContainer > div:nth-child(5) {
+        grid-area: e;
+      }
+      #commentContainer > div:nth-child(6) {
+        grid-area: f;
+      }
+
+      #commentContainer > div:nth-child(7) {
+        grid-area: g;
+      }
+
+      #commentContainer > div:nth-child(8) {
+        grid-area: h;
+      }
+      #commentContainer>div{
+        padding: 20px;
+        padding-top: 60px;
+        color: #7f7876;
+        font-size: 17px;
+        line-height: 1.5;
+        font-family: 'geomanist-regular',sans-serif;
+      }
+
+      #commentContainer>div>p{
+        margin-bottom: 37px;
+      }
+      .grindanch{
+        color: #53a7ea;
+      }
+      @media only screen and (min-width: 70px) and (max-width: 830px) {
+
+            #commentContainer{
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows: repeat(9,1fr);
+                width: 90%;
+                height: auto;
+                grid-template-areas: 
+                "a"
+                "b"
+                "c"
+                "d"
+                "e"
+                "f"
+                "g"
+                "h";
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar starts -->
+    <div id="navbar">
+        <div id="navLeft">
+            <!-- <div><i class='fa fa-clock-o'></i> EverHour</div> -->
+            <div id="navLeftFirst"><img id="everhourImg"
+                    src="https://upload.wikimedia.org/wikipedia/en/3/3a/Everhour_%28software%29_logo.png" alt="">
+                <div class="alignVerticallyC"><a href="index.html">Everhour</a></div>
+            </div>
+            <div class="alignVerticallyC">Integrations <span id="new">New</span></div>
+            <div class="alignVerticallyC">Pricing</div>
+            <div class="alignVerticallyC">Demo</div>
+        </div>
+        <div id="navRight">
+            <div><a href="login.html">Login</a></div>
+            <div><button id="signUp"><a href="signUp.html">Sign Up</a></button></div>
+        </div>
+    </div>
+    <!-- Navbar Ends -->
+    <div class="middle1">
+        <h1>Make your team more productive with Everhour</h1>
+        <h3>Join 3,500+ customers who use Everhour to track time and plan their future projects more effectively</h3>
+        <div>
+           
+            <button class="Googlebtn">
+                    <img class="googleimg" src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-1024.png" alt="">
+                    <a href="#" class="anchortextdeco">sign up with Google</a>
+            </button>
+                <p class="changeColor">or</p>
+            <form action="">
+                <!-- <button class="Googlebtn">
+                    <img class="googleimg" src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-1024.png" alt="">
+                    <a href="#" class="anchortextdeco">sign up with Google</a>
+                </button>
+                <p class="changeColor">or</p> -->
+                <input type="text" id="email" placeholder="Work Email..."> <br>
+                <input type="submit" class="btnTryFree" value="Get started">
+            </form>
+        </div>
+        <p class="changeColor2last">Free to try   <span class="givePadding">•</span>   No credit card required   <span class="givePadding">•</span>   1-minute signup</p>
+    </div>
+
+    <div id="commentContainer">
+        <div class="gridPara1">
+            <p>“I am the owner of the company, and I use Everhour for timekeeping of myself and my subcontractors. All team members use the system - from web developers to tech support to project management to design.”</p>
+            <p>— Jennifer H. (Source: <a href="#" class="grindanch">TrustRadius</a> )</p>
+        </div>
+        <div>
+            <p>“We are using Everhour as a core business software, because our business is to sell our time. When you use such software, what you care about the most is speed, flexibility, ability to integrate with all major project management software. And Everhour is exactly that kind of software”</p>
+            <p>— Ivan M. (Source: (Source: <a href="#" class="grindanch">TrustRadius</a> )</p>
+        </div>
+        <div>
+            <p>“Everhour’s integration with Asana is wonderful for a remote team. We track all activities in Asana, but before Everhour I often wondered how long it was taking to do a task, now I know exactly. I can see who is working right now and a summary each day”.</p>
+            <p> — Doug H. (Source: <a href="#" class="grindanch">TrustRadius</a> )</p>
+        </div>
+        <div>
+            <p>“Everhour is being used by my department now, but it’s planned to be used across the whole company. We were having problems tracking the times of every project and Everhour ended up being the best solution to the issue. We’re tracking our tasks involved in every project, in every level (software development, meetings, project management, etc.)”</p>
+            <p>— Maria Lucia S. (Source: <a href="#" class="grindanch">TrustRadius</a> )</p>
+        </div>
+        <div>
+            <p>“We are a 15 people team working remotely from different cities of Latin America and Europe, and time tracking for each client, project, and task has always been a major issue. We’ve been using Everhour for the past year or so, and it has become an essential tool for our team. It does not only give us the ability to track how much time we have dedicated to a project but also to estimate how much time a particular task will need in order to be completed next time and by who. Easily create and save reports with just a few clicks”</p>
+            <p>— Daniel Y. (Source: <a href="#" class="grindanch">TrustRadius</a> )</p>
+        </div>
+        <div>
+            <p>“Everhour helps me manage/plan my weekly activities a lot more effectively, since I know how much time I have to work on things each day, and can quickly update estimated times to reallocate tasks as needed.”</p>
+            <p>— Dan S. (Source: <a href="#" class="grindanch">TrustRadius</a> )</p>
+        </div>
+        <div>
+            <p>“The most important gain from using Everhour is that we can track our tasks in real-time without having to leave the browser. The Chrome add-on helps us initiate the time for a specific task. If we are already on Asana, a simple click does the job.”</p>
+            <p>— Dimitris R. (Source: <a href="#" class="grindanch">TrustRadius</a> )</p>
+        </div>
+        <div>
+            <p>“Everhour has already paid for itself for the year by helping me track time I was missing in client projects. It is easy to use, has friendly customer service people, and the reports make it easy to invoice clients and track projects.”</p>
+            <p>— Jennifer D.  (Source: <a href="#" class="grindanch">TrustRadius</a> )</p>
+        </div>
+    </div>
+    <button id="ReadMorebtn">Read More</button>
+</body>
+</html>
+<script>
+     document.querySelector("form").addEventListener("submit",emailStore);
+
+     function emailStore(event) {
+       event.preventDefault();
+    //    window.location.href = "welcome.html";
+    window.location.replace("welcome.html");
+     }
+</script>

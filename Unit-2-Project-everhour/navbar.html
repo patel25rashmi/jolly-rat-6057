@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /* Navbar start here */
+       #navbar{
+            display: flex;
+            justify-content: space-between;
+            font-size: 17px;
+            margin-top: 25px;
+            font-family: 'geomanist-regular',sans-serif;
+            /* position: -webkit-sticky; */
+            position: sticky;
+            top: 0;
+            background-color: white;
+            padding: 10px 0px;
+            border-bottom: 0.5px solid #e9e9e9;
+        }
+        #navLeft{
+            display: flex;
+            width: 40%;
+            justify-content: space-around;
+        }
+        #navRight{
+            display: flex;
+            width: 15%;
+            /* justify-content: space-around; */
+        }
+        #signUp{
+            padding: 10px 15px;
+            color: white;
+            background-color: #57bb71;
+            border-radius: 3px;
+            border: none;
+            font-size: 15px;
+            margin-left: 20px;
+        }
+        #signUp>a{
+            text-decoration: none;
+            font-size: 15px;
+            color: white;
+        }
+        #new{
+            border: none;
+            border-radius: 3px;
+            color: white;
+            background-color: #57bb71;
+            font-size: 12px;
+            padding: 4px 7px;
+            margin-left: 4px;
+        }
+        #navRight div{
+            margin: auto 0px;
+        }
+        #navRight>div>a{
+            text-decoration: none;
+        }
+        .alignVerticallyC{
+            margin: auto 0px;
+        }
+        .alignVerticallyC>a{
+            text-decoration: none;
+        }
+        #everhourImg{
+            height: 30px;
+            width: 30px;
+            margin-right: 10px;
+        }
+        #navLeftFirst{
+            display: flex;
+            margin: auto 0px;
+            font-size: 18px;
+        }
+        /* Nav ends here */
+    </style>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+</head>
+<body>
+    <div id="navbar">
+        <div id="navLeft">
+            <!-- <div><i class='fa fa-clock-o'></i> EverHour</div> -->
+            <div id="navLeftFirst"><img id="everhourImg"
+                    src="https://upload.wikimedia.org/wikipedia/en/3/3a/Everhour_%28software%29_logo.png" alt="">
+                <div class="alignVerticallyC"><a href="Homepage.html">Everhour</a></div>
+            </div>
+            <div class="alignVerticallyC">Integrations <span id="new">New</span></div>
+            <div class="alignVerticallyC">Pricing</div>
+            <div class="alignVerticallyC">Demo</div>
+        </div>
+        <div id="navRight">
+            <div><a href="login.html">Login</a></div>
+            <div><button id="signUp"><a href="signUp.html">Sign Up</a></button></div>
+        </div>
+    </div>
+
+</body>
+</html>

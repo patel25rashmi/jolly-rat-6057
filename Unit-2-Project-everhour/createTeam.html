@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /* Navbar start here */
+      #navbar{
+            display: flex;
+            justify-content: space-between;
+            font-size: 17px;
+            margin-top: 25px;
+            font-family: 'geomanist-regular',sans-serif;
+            /* position: -webkit-sticky; */
+            position: sticky;
+            top: 0;
+            background-color: white;
+            padding: 10px 0px;
+            border-bottom: 0.5px solid #e9e9e9;
+        }
+        #navLeft{
+            display: flex;
+            width: 40%;
+            justify-content: space-around;
+        }
+        #navRight{
+            display: flex;
+            width: 15%;
+            /* justify-content: space-around; */
+        }
+        #signUp{
+            padding: 10px 15px;
+            color: white;
+            background-color: #57bb71;
+            border-radius: 3px;
+            border: none;
+            font-size: 15px;
+            margin-left: 20px;
+        }
+        #signUp>a{
+            text-decoration: none;
+            font-size: 15px;
+            color: white;
+        }
+        #new{
+            border: none;
+            border-radius: 3px;
+            color: white;
+            background-color: #57bb71;
+            font-size: 12px;
+            padding: 4px 7px;
+            margin-left: 4px;
+        }
+        #navRight div{
+            margin: auto 0px;
+        }
+        #navRight>div>a{
+            text-decoration: none;
+        }
+        .alignVerticallyC{
+            margin: auto 0px;
+        }
+        .alignVerticallyC>a{
+            text-decoration: none;
+        }
+        #everhourImg{
+            height: 30px;
+            width: 30px;
+            margin-right: 10px;
+        }
+        #navLeftFirst{
+            display: flex;
+            margin: auto 0px;
+            font-size: 18px;
+        }
+        /* Nav ends here */
+
+        #welcome{
+            width: 40%;
+            margin: 50px auto;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+            height: 630px;
+            text-align: center;
+            border-radius: 5px;
+            padding-top: 20px;
+        }
+        #welcome>p{
+            color: #767676;
+            border-bottom: 30px;
+        }
+        input{
+            height: 37px;
+            width: 70%;
+            margin-bottom: 20px;
+            border: 1px solid #dcdbef;
+            border-radius: 3px;
+        }
+        #continue{
+            background-color: #57bb71;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            margin-top: 20px;
+            height: 40px;
+        }
+        .labelFont{
+            /* text-align: left; */
+            font-weight: 100;
+            font-family: 'geomanist-book',sans-serif;
+        }
+        #groupmail{
+            height: 200px;
+            border: 1px solid #dcdbef;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar starts -->
+    <div id="navbar">
+        <div id="navLeft">
+            <!-- <div><i class='fa fa-clock-o'></i> EverHour</div> -->
+            <div id="navLeftFirst"><img id="everhourImg"
+                    src="https://upload.wikimedia.org/wikipedia/en/3/3a/Everhour_%28software%29_logo.png" alt="">
+                <div class="alignVerticallyC"><a href="index.html">Everhour</a></div>
+            </div>
+            <div class="alignVerticallyC">Integrations <span id="new">New</span></div>
+            <div class="alignVerticallyC">Pricing</div>
+            <div class="alignVerticallyC">Demo</div>
+        </div>
+        <div id="navRight">
+            <div><a href="login.html">Login</a></div>
+            <div><button id="signUp"><a href="signUp.html">Sign Up</a></button></div>
+        </div>
+    </div>
+    <!-- Navbar Ends -->
+    <div id="welcome">
+                <h1>Create your team </h1>
+                <p>Add team info to make collaborating easy</p>
+        <form action="#">
+            
+            <label class="labelFont" for="">Name</label><br>
+            <input type="text" placeholder="e.g. John Smith" id="email"><br>
+
+            <label class="labelFont" for="">size</label><br>
+            <input type="text" placeholder="e.g. Co-Founder/CEO" id="title"><br>
+
+            <label class="labelFont" for="">Emails of People to Invite</label><br>
+            <input type="email" placeholder="Enter teammates mail to invite" id="groupmail"><br>
+
+            <label for="">I have read and agree to the Terms and Privacy Policy</label><br>
+            <input type="submit" value="Continue" id="continue">
+        </form>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",teamStore);
+
+function teamStore(event) {
+  event.preventDefault();
+  window.location.replace("create1stPro.html");
+}
+</script>

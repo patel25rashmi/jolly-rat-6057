@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Navbar start here */
+        #navbar {
+            display: flex;
+            justify-content: space-between;
+            font-size: 17px;
+            margin-top: 25px;
+            font-family: 'geomanist-regular', sans-serif;
+            /* position: -webkit-sticky; */
+            position: sticky;
+            top: 0;
+            background-color: white;
+            padding: 10px 0px;
+            border-bottom: 0.5px solid #e9e9e9;
+        }
+
+        #navLeft {
+            display: flex;
+            width: 40%;
+            justify-content: space-around;
+        }
+
+        #navRight {
+            display: flex;
+            width: 15%;
+            /* justify-content: space-around; */
+        }
+
+        #signUp {
+            padding: 10px 15px;
+            color: white;
+            background-color: #57bb71;
+            border-radius: 3px;
+            border: none;
+            font-size: 15px;
+            margin-left: 20px;
+        }
+
+        #signUp>a {
+            text-decoration: none;
+            font-size: 15px;
+            color: white;
+        }
+
+        #new {
+            border: none;
+            border-radius: 3px;
+            color: white;
+            background-color: #57bb71;
+            font-size: 12px;
+            padding: 4px 7px;
+            margin-left: 4px;
+        }
+
+        #navRight div {
+            margin: auto 0px;
+        }
+
+        #navRight>div>a {
+            text-decoration: none;
+        }
+
+        .alignVerticallyC {
+            margin: auto 0px;
+        }
+
+        .alignVerticallyC>a {
+            text-decoration: none;
+        }
+
+        #everhourImg {
+            height: 30px;
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        #navLeftFirst {
+            display: flex;
+            margin: auto 0px;
+            font-size: 18px;
+        }
+
+        /* Nav ends here */
+
+        #container {
+            margin-top: 40px;
+        }
+
+        #taskContainer {
+            width: 95%;
+            margin: auto;
+            /* height: 550px; */
+            height: auto;
+            border-radius: 5px;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        }
+
+        #container1 {
+            height: 50px;
+            border-bottom: 1px solid #e9e9e9;
+        }
+
+        .timeList {
+            height: 100%;
+            background-color: white;
+            border: none;
+            width: 70px;
+            border-bottom: 2px solid #57bb71;
+            margin-left: 50px;
+        }
+
+        table,
+        td,
+        th {
+            border: 1px solid #e9e9e9;
+            text-align: center;
+        }
+
+        td:hover {
+            border: 1px solid #767676;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: auto;
+            margin-top: 35px;
+        }
+
+        td,
+        th {
+            padding: 20px;
+        }
+
+        tr>th {
+            background-color: #e9e9e9;
+        }
+
+        #taskwidth {
+            width: 300px;
+            text-align: left;
+        }
+
+        .playBtn {
+            background: white;
+            border: none;
+        }
+
+        .playBtn>img {
+            height: 30px;
+            width: 30px;
+        }
+
+        .addTask {
+            margin: auto;
+            text-align: left;
+            margin-bottom: 50px;
+        }
+
+        .addTask>button {
+            height: 40px;
+            width: 100px;
+            text-align: center;
+            margin: auto;
+            background-color: #57bb71;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+
+        .addTask>button>a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #btnCont {
+            display: flex;
+            width: 90%;
+            margin: auto;
+            justify-content: space-around;
+            /* border: 1px solid red; */
+        }
+        #time_main{
+            height: 50px;
+            width: 100px;
+            text-align: center;
+            margin: auto;
+            background-color: #57bb71;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar starts -->
+    <div id="navbar">
+        <div id="navLeft">
+            <!-- <div><i class='fa fa-clock-o'></i> EverHour</div> -->
+            <div id="navLeftFirst"><img id="everhourImg"
+                    src="https://upload.wikimedia.org/wikipedia/en/3/3a/Everhour_%28software%29_logo.png" alt="">
+                <div class="alignVerticallyC"><a href="index.html">Everhour</a></div>
+            </div>
+            <div class="alignVerticallyC">Integrations <span id="new">New</span></div>
+            <div class="alignVerticallyC">Pricing</div>
+            <div class="alignVerticallyC">Demo</div>
+        </div>
+        <div id="navRight">
+            <div><a href="login.html">Login</a></div>
+            <div><button id="signUp"><a href="signUp.html">Sign Up</a></button></div>
+        </div>
+    </div>
+    <!-- Navbar Ends -->
+    <div id="container">
+        <div></div>
+        <div id="taskContainer">
+            <div id="container1">
+                <button class="timeList">List</button>
+                <button class="timeList">Timesheet</button>
+            </div>
+
+            <div>
+
+                <table cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th id="taskwidth">Tasks</th>
+                            <th>Start Time</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thirs</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                            <th>Sun</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Table Rows should be appended Here  -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <h2 id="time_main"></h2>
+    <div id="btnCont">
+        <button id="time_main" onclick="startfn()" onclick="change_height()">Start Timer</button>
+        <!-- <div class="addTask"><button>Start Timer</button></div> -->
+        <div class="addTask"><button><a href="create1stPro.html">Add task</a></button></div>
+        <button class="playBtn" onclick="startfn()"><img
+                src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzJ2LTE3MmgxNzJ2MTcyeiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnIGZpbGw9IiM1N2JiNzEiPjxwYXRoIGQ9Ik04Niw2Ljg4Yy00My42MjYwOCwwIC03OS4xMiwzNS40OTA0OCAtNzkuMTIsNzkuMTJjMCw0My42Mjk1MiAzNS40OTM5Miw3OS4xMiA3OS4xMiw3OS4xMmM0My42MjYwOCwwIDc5LjEyLC0zNS40OTA0OCA3OS4xMiwtNzkuMTJjMCwtNDMuNjI5NTIgLTM1LjQ5MzkyLC03OS4xMiAtNzkuMTIsLTc5LjEyek02Mi4wNjQ0OCwxMjMuOTU2OTZsLTAuMjg1NTIsLTc1LjY2NjI0bDY1LjUwMTA0LDM3LjU4NTQ0eiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+"
+                alt=""></button>
+    </div>
+</body>
+
+</html>
+<script>
+    let LSData = JSON.parse(localStorage.getItem('projectTask')) || [];
+
+    let tbody = document.querySelector('tbody');
+
+    function displayTable(data) {
+
+        tbody.innerHTML = null;
+        data.forEach(function (element, index) {
+            let tr = document.createElement('tr');
+
+            let TaskName = document.createElement('td');
+            TaskName.innerText = element;
+
+            let startBtn = document.createElement('td');
+            startBtn.innerText = "Start Time";
+            startBtn.style.backgroundColor =  "#d7f3e3";
+            startBtn.addEventListener('click', function(){
+                startfn();
+            });
+
+            let mon = document.createElement('td');
+            mon.innerText = "-";
+
+            let tue = document.createElement('td');
+            tue.innerText = "-";
+
+            let wed = document.createElement('td');
+            wed.innerText = "-";
+
+            let thirs = document.createElement('td');
+            thirs.innerText = "-";
+
+            let fri = document.createElement('td');
+            fri.innerText = "-";
+
+            let sat = document.createElement('td');
+            sat.innerText = "-";
+
+            let sun = document.createElement('td');
+            sun.innerText = "-";
+
+            let total = document.createElement('td');
+            total.innerText = "-";
+
+            tr.append(TaskName, startBtn, mon, tue, wed, thirs, fri, sat, sun, total);
+            //tr.append(TaskName);
+            tbody.append(tr);
+        })
+    }
+
+    displayTable(LSData);
+
+    // timer Js
+    var seconds = 0;
+    var minutes = 0;
+    var hours = 0;
+    var interval = null;
+    var status = "stopped";
+    function start() {
+        seconds++;
+        if (seconds / 60 == 1) {
+            seconds = 0;
+            minutes++;
+            if (minutes / 60 == 1) {
+                minutes = 0;
+                hours++;
+            }
+        }
+        document.getElementById('time_main').innerHTML = hours + ":" + minutes + ":" + seconds;
+    }
+    function startfn() {
+        if (status == "stopped") {
+            interval = setInterval(start, 10);
+            var btn = document.getElementById("time_main").innerHTML = "stop";
+            status = "started";
+        } else {
+
+            document.getElementById('time_main').innerHTML = "Start Timer";
+            clearInterval(interval);
+            status = "stopped";
+        }
+    }
+    function reset() {
+        clearInterval(interval);
+        document.getElementById('time_main').innerHTML = hours + ":" + minutes + ":" + seconds;
+        document.getElementById("time_main").innerHTML = "start";
+    }
+
+</script>

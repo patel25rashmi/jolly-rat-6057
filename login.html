@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'geomanist-book',sans-serif;
+            line-height: 1.17;
+            color: #333;
+        }
+        
+       /* Navbar start here */
+       #navbar{
+            display: flex;
+            justify-content: space-between;
+            font-size: 17px;
+            margin-top: 25px;
+            font-family: 'geomanist-regular',sans-serif;
+            /* position: -webkit-sticky; */
+            position: sticky;
+            top: 0;
+            background-color: white;
+            padding: 10px 0px;
+            border-bottom: 0.5px solid #e9e9e9;
+        }
+        #navLeft{
+            display: flex;
+            width: 40%;
+            justify-content: space-around;
+        }
+        #navRight{
+            display: flex;
+            width: 15%;
+            /* justify-content: space-around; */
+        }
+        #signUp{
+            padding: 10px 15px;
+            color: white;
+            background-color: #57bb71;
+            border-radius: 3px;
+            border: none;
+            font-size: 15px;
+            margin-left: 20px;
+        }
+        #signUp>a{
+            text-decoration: none;
+            font-size: 15px;
+            color: white;
+        }
+        #new{
+            border: none;
+            border-radius: 3px;
+            color: white;
+            background-color: #57bb71;
+            font-size: 12px;
+            padding: 4px 7px;
+            margin-left: 4px;
+        }
+        #navRight div{
+            margin: auto 0px;
+        }
+        #navRight>div>a{
+            text-decoration: none;
+        }
+        .alignVerticallyC{
+            margin: auto 0px;
+        }
+        .alignVerticallyC>a{
+            text-decoration: none;
+        }
+        #everhourImg{
+            height: 30px;
+            width: 30px;
+            margin-right: 10px;
+        }
+        #navLeftFirst{
+            display: flex;
+            margin: auto 0px;
+            font-size: 18px;
+        }
+        /* Nav ends here */
+
+        #Loginpage{
+            text-align: center;
+            color: #767676;
+        }
+        #Loginpage>h1{
+            font-size: 45px;
+        }
+        #loginBox{
+            width: 75%;
+            height: 520px;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 5px;
+            display: flex;
+            /* border: 1px solid red; */
+        }
+        input{
+            height: 45px;
+            width: 300px;
+            padding-left: 10px;
+            margin-bottom: 15px;
+        }
+        .Googlebtn{
+            /* height: 48px;
+            width: 310px; */
+            padding: 15px 95px;
+            background-color: white;
+            border: 1px solid #767676;
+            border-radius: 3px;
+            color: #767676;
+            font-size: 15px;
+            margin: 15px auto;
+        }
+        .changeColor{
+            color: #767676;
+            margin: 30px 0 20px 0;
+        }
+        #Loginbtn{
+            height: 55px;
+            width: 180px;
+            background-color: #57bb71;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            margin-left: auto;
+            font-size: 15px;
+        }
+        #loginBLeft{
+            margin: auto;
+            /* border: 1px solid red; */
+            width: 45%;
+            /* height: 100%; */
+            padding-top: 80px;
+        }
+        #loginBRight{
+            margin: auto;
+            /* border: 1px solid red; */
+            width: 40%;
+            height: 100%;
+            text-align: left;
+            padding-top: 40px;
+        }
+        
+        #redPara{
+            color: red;
+        }
+        #loginBLeft>a{
+            color: #767676;
+            margin-top: 40px;
+            font-size: 13px;
+        }
+        .changeColorPara{
+            color: #767676;
+            margin-top: -12px;
+            line-height: 1.5;
+        }
+        .changeColorPara>a{
+            color: #5893e4;
+        }
+        .vl {
+            border-left: 1px solid #e9e9e9;
+            height: 300px;
+            margin-top: 120px;
+         }
+         /* bottom box */
+         .middle1{
+            /* width: 50%; */
+            text-align: center;
+            margin: auto;
+            margin-top: 100px;
+        }
+        .middle1>h1{
+            width: 70%;
+            margin: 45px auto 15px;
+            font-size: 45px;
+            font-weight: 180;
+        }
+        .middle1>h3{
+            width: 60%;
+            text-align: center;
+            margin: 25px auto;
+            color: #7f7876;
+            font-weight: 70;
+        }
+        .middle1>div>input{
+            margin-left: 10%;
+        }
+        .middle1 div{
+            width: 50%;
+            text-align: center;
+            margin: 15px auto;
+            display: flex;
+        }
+        
+        .btnTryFree{
+            height: 45px;
+            width: 130px;
+            background-color: #57bb71;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            margin-left: 10px;
+            font-size: 15px;
+        }
+        .anchortextdeco{
+            text-decoration: none;
+            color: #7f7876;
+            /* border: 1px solid teal; */
+            padding-left: 10px;
+        }
+        .anchortextdeco:hover{
+            text-decoration: underline;
+        }
+        
+        .googleimg{
+            width: 30px;
+            height: 30px;
+            /* border: 1px solid red; */
+            padding-left: 20%;
+        }
+
+         /* Footer CSS starts here */
+    #Footer{
+            height: 520px;
+            width: 100%;
+            background-color: black;
+            color: white;
+            font-family: 'geomanist-regular',sans-serif;
+            padding-top: 50px;
+            margin-top: 100px;
+        }
+        #TopSection{
+            display: flex;
+            width: 95%;
+            justify-content: space-between;
+            margin: auto;
+            /* border: 1px solid red; */
+            color: white;
+        }
+        .footermainSec{
+            color: #8a8b8b;
+            font-size: 14px;
+        }
+        .footersuncat{
+            color: white;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .footersuncat:hover{
+            color: #8a8b8b;
+        }
+        #footer-bottom{
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            margin: 20px auto;
+            font-size: 13px;
+            font-weight: lighter;
+            color: white;
+        }
+        #footer-bottom>div{
+            color: white;
+        }
+        .footerImg{
+            height: 30px;
+            width: 35px;
+            /* border-radius: 50%; */
+        }
+        #everhourFootImg{
+            height: 45px;
+            width: 45px;
+            margin-right: auto;
+        }
+    /* Footer CSS ends here */
+    </style>
+</head>
+<body>
+    <!-- Navbar starts -->
+    <div id="navbar">
+        <div id="navLeft">
+            <!-- <div><i class='fa fa-clock-o'></i> EverHour</div> -->
+            <div id="navLeftFirst"><img id="everhourImg"
+                    src="https://upload.wikimedia.org/wikipedia/en/3/3a/Everhour_%28software%29_logo.png" alt="">
+                <div class="alignVerticallyC"><a href="index.html">Everhour</a></div>
+            </div>
+            <div class="alignVerticallyC">Integrations <span id="new">New</span></div>
+            <div class="alignVerticallyC">Pricing</div>
+            <div class="alignVerticallyC">Demo</div>
+        </div>
+        <div id="navRight">
+            <div><a href="login.html">Login</a></div>
+            <div><button id="signUp"><a href="signUp.html">Sign Up</a></button></div>
+        </div>
+    </div>
+    <!-- Navbar Ends -->
+    <div id="Loginpage">
+        <H1>Log in to Everhour</H1>
+      <div id="loginBox">
+        <div id="loginBLeft">
+            <form action="">
+                <label class="Googlebtn" >Login With Google</label> <br>
+                <p class="changeColor">or</p>
+                <input type="email" placeholder="Enter Your Email..." id="email"> <br>
+                <input type="password" placeholder="Password..." id="password"> <br>
+                <input type="submit" id="Loginbtn" value="Log in">
+            </form>
+            <a href="#">Login with SSO</a><br>
+            <a href="#">Raset password</a>
+        </div>
+        <div class="vl"></div>
+        <div id="loginBRight">
+            <p id="redPara">NEWS</p>
+
+            <h3>New Timeline</h3>
+            <p class="changeColorPara">Sync assignments from your connected integrations automatically once you add a task assignee and a due date th... <a href="#">Learn More</a></p>
+
+            <h3>Updates to Tracking Time Without a Task</h3>
+            <p class="changeColorPara">Now you can track time without a task and it will show up on team timesheets immediately. <a href="#">Learn More</a></p>
+
+            <h3>Integration with Todoist</h3>
+            <p class="changeColorPara">Everhour now integrates with Todoist! <a href="#">Learn More</a></p>
+
+        </div>
+      </div>
+    </div>
+    
+        <div class="middle1">
+            <h1>New to Everhour?</h1>
+            <h3>Try Everhour for free and see if it works for your business</h3>
+            <div>
+                <input type="text" placeholder="Work Email...">
+                <button class="btnTryFree">Try it free</button>
+            </div>
+            <div>
+               <img class="googleimg" src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-1024.png" alt="">
+                <a href="#" class="anchortextdeco"> Or sign up with Google Account</a>
+            </div>
+        </div>
+
+        <!-- Footer starts here -->
+    <div id="Footer">
+        <div id="TopSection">
+            <div id="footerImgdiv">
+                <img id="everhourFootImg"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcMM-4MK65hzow57Gj2J7eLgQfxTDGMU-ktg&usqp=CAU" alt="">
+            </div>
+            <div>
+                <p class="footermainSec">Company</p>
+                <p class="footersuncat">About us</p>
+                <p class="footersuncat">Contact</p>
+            </div>
+            <div>
+                <p class="footermainSec">Product</p>
+                <p class="footersuncat">Tour</p>
+                <p class="footersuncat">Pricing</p>
+                <p class="footersuncat">Request a demo</p>
+                <p class="footersuncat">Customers</p>
+                <p class="footersuncat">API & docs</p>
+                <p class="footersuncat">Status</p>
+            </div>
+            <div>
+                <p class="footermainSec">Solutions</p>
+                <p class="footersuncat">Time tracking</p>
+                <p class="footersuncat">Project budgeting</p>
+                <p class="footersuncat">Visual planning</p>
+                <p class="footersuncat">Expenses</p>
+                <p class="footersuncat">Reporting</p>
+                <p class="footersuncat">Invoicing</p>
+                <p class="footersuncat">Time card calculator</p>
+                <p class="footersuncat">weekly timesheet template</p>
+                <p class="footersuncat">Invoice generator</p>
+            </div>
+            <div>
+                <p class="footermainSec">Integrations</p>
+                <p class="footersuncat">Asana</p>
+                <p class="footersuncat">Basecamo</p>
+                <p class="footersuncat">Trello</p>
+                <p class="footersuncat">Jira</p>
+                <p class="footersuncat">GitHub</p>
+                <p class="footersuncat">ClickUp</p>
+                <p class="footersuncat">Monday</p>
+                <p class="footersuncat">Notion</p>
+                <p class="footersuncat">Todoist</p>
+                <p class="footersuncat">GitLab</p>
+                <p class="footersuncat">All</p>
+            </div>
+            <div>
+                <p class="footermainSec">Learn</p>
+                <p class="footersuncat">Resources</p>
+                <p class="footersuncat">Help center</p>
+                <p class="footersuncat">Blog</p>
+                <p class="footersuncat">Product updates</p>
+                <p class="footersuncat">Timesheet app</p>
+                <p class="footersuncat">Time clock app</p>
+                <p class="footersuncat">Attendance tracker</p>
+                <p class="footersuncat">Work hours tracker</p>
+                <p class="footersuncat">Employee time tracking</p>
+            </div>
+            <div>
+                <p class="footermainSec">Download</p>
+                <p class="footersuncat">Browser extension</p>
+                <p class="footersuncat">Chrome time tracking extension</p>
+                <p class="footersuncat">Time tracking with screenshots</p>
+                <p class="footersuncat">iphone app</p>
+            </div>
+            
+        </div>
+
+        <div id="footer-bottom">
+            <div>© 2022 Everhour Terms | Privacy | Cookies | Sitemap</div>
+            <div>
+                <img class="footerImg" src="https://img.icons8.com/color/72/facebook-new.png" alt="">
+                <img class="footerImg" src="https://img.icons8.com/color/344/twitter-circled--v1.png" alt="">
+                <img class="footerImg" src="https://img.icons8.com/color/344/linkedin-circled--v1.png" alt="">
+                <img class="footerImg" src="https://img.icons8.com/color/2x/youtube-play.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    <!-- footer ends here -->
+    
+</body>
+</html>
+<script>
+
+ document.querySelector("form").addEventListener("submit",saveData);
+function saveData(event)
+{
+    event.preventDefault();
+let email=document.getElementById("email").value;
+
+psw=document.getElementById("psw").value;
+
+let appliedLoginArr = JSON.parse(localStorage.getItem("signupList"));
+
+if(appliedLoginArr.some((v)=>{return v.email==email}))
+{
+  alert("Login Pass");
+  let current_user=appliedLoginArr.filter((v)=>{return v.email==email && v.psw==psw})[0]
+ 
+ localStorage.setItem('email',current_user.email);
+//   window.location.href="Timer.html"
+window.location.replace("createTeam.html");
+}
+else
+{
+  alert('Please fill correct details');
+}
+
+}
+
+//directly redirecting as code is throwing error
+document.querySelector("form").addEventListener("submit",emailStore);
+
+function emailStore(event) {
+  event.preventDefault();
+//    window.location.href = "welcome.html";
+window.location.replace("createTeam.html");
+}
+</script>

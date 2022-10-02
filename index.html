@@ -10,6 +10,76 @@
             font-family: 'geomanist-book',sans-serif;
             color: #333333;
         }
+        /* Navbar start here */
+        #navbar{
+            display: flex;
+            justify-content: space-between;
+            font-size: 17px;
+            margin-top: 25px;
+            font-family: 'geomanist-regular',sans-serif;
+            /* position: -webkit-sticky; */
+            position: sticky;
+            top: 0;
+            background-color: white;
+            padding: 10px 0px;
+            border-bottom: 0.5px solid #e9e9e9;
+        }
+        #navLeft{
+            display: flex;
+            width: 40%;
+            justify-content: space-around;
+        }
+        #navRight{
+            display: flex;
+            width: 15%;
+            /* justify-content: space-around; */
+        }
+        #signUp{
+            padding: 10px 15px;
+            color: white;
+            background-color: #57bb71;
+            border-radius: 3px;
+            border: none;
+            font-size: 15px;
+            margin-left: 20px;
+        }
+        #signUp>a{
+            text-decoration: none;
+            font-size: 15px;
+            color: white;
+        }
+        #new{
+            border: none;
+            border-radius: 3px;
+            color: white;
+            background-color: #57bb71;
+            font-size: 12px;
+            padding: 4px 7px;
+            margin-left: 4px;
+        }
+        #navRight div{
+            margin: auto 0px;
+        }
+        #navRight>div>a{
+            text-decoration: none;
+        }
+        .alignVerticallyC{
+            margin: auto 0px;
+        }
+        .alignVerticallyC>a{
+            text-decoration: none;
+        }
+        #everhourImg{
+            height: 30px;
+            width: 30px;
+            margin-right: 10px;
+        }
+        #navLeftFirst{
+            display: flex;
+            margin: auto 0px;
+            font-size: 18px;
+        }
+        /* Nav ends here */
         .middle1{
             /* width: 50%; */
             text-align: center;
@@ -179,7 +249,7 @@
         height: 600px;
         width: 90%;
         margin: auto;
-        border: 1px solid red;
+        /* border: 1px solid red; */
     }
     #middle4Div1{
         width: 50%;
@@ -222,7 +292,7 @@
     }
     #middle5{
         display: flex;
-        border: 1px solid teal;
+        /* border: 1px solid teal; */
         width: 90%;
         margin: auto;
         height: 300px;
@@ -231,7 +301,7 @@
     #middle5>div{
         width: 50%;
         margin: auto;
-        border: 1px solid blueviolet;
+        /* border: 1px solid blueviolet; */
     }
     #middle5>div>h1{
         font-size: 35px;
@@ -244,22 +314,136 @@
         width: 100%;
     }
     #middle5 div{
-        margin-bottom: -20px;
+        /* margin-bottom: -20px; */
         width: 100%;
         text-align: center;
     }
     .bulletPoint{
         display: flex;
+        justify-content: center;
         line-height: 10px;
+        padding-top: 30px;
+        font-size: 15px;
     }
     .colorDot>img{
         height: 20px;
         width: 20px;
     }
-    
+    #bulletCont{
+        height: 100%;
+    }
+
+    /* Footer CSS starts here */
+    #Footer{
+            height: 520px;
+            width: 100%;
+            background-color: black;
+            color: white;
+            font-family: 'geomanist-regular',sans-serif;
+            padding-top: 50px;
+            margin-top: 100px;
+        }
+        #TopSection{
+            display: flex;
+            width: 95%;
+            justify-content: space-between;
+            margin: auto;
+            /* border: 1px solid red; */
+            color: white;
+        }
+        .footermainSec{
+            color: #8a8b8b;
+            font-size: 14px;
+        }
+        .footersuncat{
+            color: white;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .footersuncat:hover{
+            color: #8a8b8b;
+        }
+        #footer-bottom{
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            margin: 20px auto;
+            font-size: 13px;
+            font-weight: lighter;
+        }
+        #footer-bottom>div{
+            color: white;
+        }
+        .footerImg{
+            height: 30px;
+            width: 35px;
+            /* border-radius: 50%; */
+        }
+        #everhourFootImg{
+            height: 45px;
+            width: 45px;
+            margin-right: auto;
+        }
+    /* Footer CSS ends here */
+    #middle2{
+       display: flex; 
+       width: 100%;
+       justify-content: space-between ;
+       /* border: 1px solid red; */
+       height: 500px;
+       margin: 5px 0px 50px 40px;
+    }
+    #middle2cont1{
+        width: 30%;
+        /* border: 1px solid teal; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #middle2cont2{
+        width: 60%;
+        /* border: 1px solid blue; */
+        margin-left: 50px;
+    }
+    #middle2-Img{
+        height: 100%;
+        width: 100%;
+    }
+    #middle2cont1>div:hover{
+        color: #57bb71;
+    }
+    #middle2cont1>div>a{
+        color: #5893e4;
+        font-weight: lighter;
+        font-size: 15px;
+    }
+    #middle2cont1>div>a:hover{
+        color: #5893e4;
+        font-weight: lighter;
+        font-size: 15px;
+        text-decoration: none;
+    }
     </style>
 </head>
 <body>
+    <div id="navbar">
+        <div id="navLeft">
+            <!-- <div><i class='fa fa-clock-o'></i> EverHour</div> -->
+            <div id="navLeftFirst"><img id="everhourImg"
+                    src="https://upload.wikimedia.org/wikipedia/en/3/3a/Everhour_%28software%29_logo.png" alt="">
+                <div class="alignVerticallyC"><a href="index.html">Everhour</a></div>
+            </div>
+            <div class="alignVerticallyC">Integrations <span id="new">New</span></div>
+            <div class="alignVerticallyC">Pricing</div>
+            <div class="alignVerticallyC">Demo</div>
+        </div>
+        <div id="navRight">
+            <div><a href="login.html">Login</a></div>
+            <div><button id="signUp"><a href="signUp.html">Sign Up</a></button></div>
+        </div>
+    </div>
     <div class="middle1">
         <h1>Powerful time tracking software with hassle-free integrations</h1>
         <h3>Accurate time tracker for budgeting, client invoicing and painless payroll.
@@ -273,7 +457,20 @@
             <a href="#" class="anchortextdeco"> Or sign up with Google Account</a>
         </div>
     </div>
-    <div id="middle2"></div>
+    <div id="middle2">
+        <div id="middle2cont1">
+            <div>Time tracking</div>
+            <div>Billing and budgeting</div>
+            <div>Task management</div>
+            <div>Visual planning</div>
+            <div>Expenses</div>
+            <div>Invoicing</div>
+            <div><a href="#">All Everhour features →</a></div>
+        </div>
+        <div id="middle2cont2">
+            <img id="middle2-Img" src="https://blog-cdn.everhour.com/assets/images/new-design/screens/new-tour/invoices-preview-v3@2x.webp" alt="">
+        </div>
+    </div>
 <div id="middle3">
     <h1>Track time and watch progress inside <span><a href="#" id="twoDozen">two dozen</a></span> popular apps</h1>
     <div id="appflex">
@@ -379,7 +576,7 @@
                 <a href="#" class="anchortextdeco"> Or sign up with Google Account</a>
             </div>
         </div>
-        <div>
+        <div id="bulletCont">
             <div class="bulletPoint">
                 <div class="colorDot"><img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzJ2LTE3MmgxNzJ2MTcyeiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnIGZpbGw9IiM1N2JiNzEiPjxwYXRoIGQ9Ik04NiwxNy4yYy0zNy45OTcxOSwwIC02OC44LDMwLjgwMjgxIC02OC44LDY4LjhjMCwzNy45OTcxOSAzMC44MDI4MSw2OC44IDY4LjgsNjguOGMzNy45OTcxOSwwIDY4LjgsLTMwLjgwMjgxIDY4LjgsLTY4LjhjMCwtMzcuOTk3MTkgLTMwLjgwMjgxLC02OC44IC02OC44LC02OC44eiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+" alt=""></div>
                 <div><b>Track time from the apps you already use</b></div>
@@ -402,6 +599,87 @@
             </div>
         </div>     
     </div>
+    <!-- Footer starts here -->
+    <div id="Footer">
+        <div id="TopSection">
+            <div id="footerImgdiv">
+                <img id="everhourFootImg"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcMM-4MK65hzow57Gj2J7eLgQfxTDGMU-ktg&usqp=CAU" alt="">
+            </div>
+            <div>
+                <p class="footermainSec">Company</p>
+                <p class="footersuncat">About us</p>
+                <p class="footersuncat">Contact</p>
+            </div>
+            <div>
+                <p class="footermainSec">Product</p>
+                <p class="footersuncat">Tour</p>
+                <p class="footersuncat">Pricing</p>
+                <p class="footersuncat">Request a demo</p>
+                <p class="footersuncat">Customers</p>
+                <p class="footersuncat">API & docs</p>
+                <p class="footersuncat">Status</p>
+            </div>
+            <div>
+                <p class="footermainSec">Solutions</p>
+                <p class="footersuncat">Time tracking</p>
+                <p class="footersuncat">Project budgeting</p>
+                <p class="footersuncat">Visual planning</p>
+                <p class="footersuncat">Expenses</p>
+                <p class="footersuncat">Reporting</p>
+                <p class="footersuncat">Invoicing</p>
+                <p class="footersuncat">Time card calculator</p>
+                <p class="footersuncat">weekly timesheet template</p>
+                <p class="footersuncat">Invoice generator</p>
+            </div>
+            <div>
+                <p class="footermainSec">Integrations</p>
+                <p class="footersuncat">Asana</p>
+                <p class="footersuncat">Basecamo</p>
+                <p class="footersuncat">Trello</p>
+                <p class="footersuncat">Jira</p>
+                <p class="footersuncat">GitHub</p>
+                <p class="footersuncat">ClickUp</p>
+                <p class="footersuncat">Monday</p>
+                <p class="footersuncat">Notion</p>
+                <p class="footersuncat">Todoist</p>
+                <p class="footersuncat">GitLab</p>
+                <p class="footersuncat">All</p>
+            </div>
+            <div>
+                <p class="footermainSec">Learn</p>
+                <p class="footersuncat">Resources</p>
+                <p class="footersuncat">Help center</p>
+                <p class="footersuncat">Blog</p>
+                <p class="footersuncat">Product updates</p>
+                <p class="footersuncat">Timesheet app</p>
+                <p class="footersuncat">Time clock app</p>
+                <p class="footersuncat">Attendance tracker</p>
+                <p class="footersuncat">Work hours tracker</p>
+                <p class="footersuncat">Employee time tracking</p>
+            </div>
+            <div>
+                <p class="footermainSec">Download</p>
+                <p class="footersuncat">Browser extension</p>
+                <p class="footersuncat">Chrome time tracking extension</p>
+                <p class="footersuncat">Time tracking with screenshots</p>
+                <p class="footersuncat">iphone app</p>
+            </div>
+            
+        </div>
+
+        <div id="footer-bottom">
+            <div>© 2022 Everhour Terms | Privacy | Cookies | Sitemap</div>
+            <div>
+                <img class="footerImg" src="https://img.icons8.com/color/72/facebook-new.png" alt="">
+                <img class="footerImg" src="https://img.icons8.com/color/344/twitter-circled--v1.png" alt="">
+                <img class="footerImg" src="https://img.icons8.com/color/344/linkedin-circled--v1.png" alt="">
+                <img class="footerImg" src="https://img.icons8.com/color/2x/youtube-play.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    <!-- footer ends here -->
 </body>
 </html>
 <script>
